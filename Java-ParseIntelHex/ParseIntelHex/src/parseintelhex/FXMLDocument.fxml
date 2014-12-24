@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parseintelhex.FXMLDocumentController">
+    <children>
+      <BorderPane layoutX="-149.0" layoutY="-171.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu text="_Menu">
+                  <items>
+                        <MenuItem onAction="#locateFile" text="_Open" />
+                        <MenuItem fx:id="saveFile" onAction="#saveFile" text="S_ave As" />
+                    <MenuItem onAction="#doExit" text="E_xit" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="aknay" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <TextArea fx:id="inputTextArea" prefHeight="105.0" prefWidth="500.0" wrapText="true" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <TextArea fx:id="outputTextArea" prefHeight="337.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+    </children>
+</AnchorPane>
